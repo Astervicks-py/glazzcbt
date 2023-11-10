@@ -1,0 +1,173 @@
+@media screen and (max-width: 600px) {
+	* {
+		::-webkit-scrollbar {
+			width: 0px;
+		}
+	}
+	.sign_container {
+		grid-template-columns: 1fr;
+		width: 85vw;
+
+		.left {
+			height: 20vh;
+		}
+
+		.right {
+			padding: 10px 10px;
+		}
+	}
+
+	table {
+		font-size: 1.1rem;
+
+		th {
+			font-size: 1rem;
+		}
+
+		td {
+			font-size: 1.1rem;
+			min-width: 200px;
+		}
+	}
+
+	.nav-item {
+		display: none !important;
+	}
+
+	.hamburger {
+		display: flex !important;
+	}
+
+	.leaderboard {
+		width: 95vw !important;
+	}
+	.course-sect {
+		overflow: hidden;
+		flex-direction: column;
+		gap: 10px;
+		font-size: 1.2rem;
+
+		a {
+			font-size: 1.2rem !important;
+			min-width: 100% !important;
+		}
+	}
+
+	.question {
+		width: 95vw !important;
+		font-size: 1.1rem !important;
+
+		.options {
+			font-size: 1.1rem !important;
+		}
+	}
+
+	.action-btn {
+		width: 100%;
+		flex-direction: column !important;
+		gap: 7px;
+		a {
+			button {
+				width: 60vw !important;
+			}
+		}
+	}
+
+	.nav-button {
+		width: 95vw !important;
+
+		.prev,
+		.next {
+			font-size: 1rem !important;
+		}
+	}
+
+	.explanation {
+		max-width: 80vw !important;
+	}
+
+	.developers {
+		width: 100% !important;
+		flex-direction: column !important;
+		gap: 3vh !important;
+
+		.card {
+			width: 90% !important;
+			// flex-direction: column !important;
+
+			// .profile {
+			// }
+
+			.about {
+				h3,
+				h4 {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.file {
+		.cam-icon {
+			font-size: 4vw;
+		}
+	}
+
+	.name-section {
+		margin-top: 5vh !important;
+		font-size: 1.2rem !important;
+	}
+
+	#show-more {
+		display: flex !important;
+	}
+
+	.show {
+		height: max-content !important;
+	}
+
+	.title {
+		font-size: 1.5rem !important;
+	}
+
+	#logged-username {
+		display: none;
+	}
+
+	// ? LIke
+	.content {
+		padding: 5px;
+
+		.heart {
+			width: 60%;
+			height: 60px;
+		}
+
+		.like,
+		.num {
+			font-size: 16px;
+		}
+	}
+
+	.notific-cont {
+		&::-webkit-scrollbar {
+			width: 0px;
+		}
+	}
+
+	.scrollcont {
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+
+	.payment-options {
+		@include display(
+			$direction: column !important,
+			$justify: center !important
+		);
+
+		.card {
+			max-width: 300px !important;
+		}
+	}
+}

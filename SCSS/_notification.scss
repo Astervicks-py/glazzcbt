@@ -1,0 +1,19 @@
+.notific-cont {
+	// @include glass;
+	height: 90vh;
+	max-height: 90vh;
+	overflow-y: auto;
+
+	.notification {
+		text-decoration: none;
+		color: #fff;
+		@include glass;
+		@include display($direction: column, $justify: flex-start, $gap: 5px);
+		border-radius: 10px;
+
+		.date {
+			color: var(--clickable);
+			align-self: flex-end;
+		}
+	}
+}

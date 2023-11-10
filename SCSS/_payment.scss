@@ -1,0 +1,149 @@
+.payment-cont {
+	margin-top: calc(10vh + 20px) !important;
+	margin: auto;
+
+	.title {
+		width: max-content;
+		margin: auto;
+		margin-bottom: 2rem;
+		letter-spacing: 2px;
+	}
+
+	.payment-options {
+		@include display($justify: space-between, $align: center);
+		flex-wrap: wrap;
+
+		.card {
+			@include glass;
+			border: solid 2px #fff;
+			width: 100%;
+			max-width: 250px;
+			border-radius: 10px;
+			min-height: 310px;
+
+			&-heading {
+				background: #0009;
+				width: 100%;
+				@include display($align: center);
+				border-radius: 10px 10px 0px 0px;
+				padding: 15px;
+				font-size: 1.4rem;
+			}
+
+			&-body {
+				padding: 20px;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 190px;
+
+				.discount {
+					font-size: 1.3rem;
+					color: lime;
+				}
+				.price {
+					margin: 1rem auto;
+					font-size: 2rem;
+				}
+
+				.pay-btn {
+					padding: 12px;
+					border-radius: 50px;
+					background: var(--clickable);
+					font-weight: bold;
+					border: none;
+					width: 80%;
+					margin-top: 1rem;
+					position: absolute;
+					bottom: 10%;
+					left: 50%;
+					transform: translateX(-50%);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.account {
+		@include glass;
+		border: solid 2px #fff;
+		width: 100%;
+		max-width: 250px;
+		border-radius: 10px;
+		min-height: 210px;
+		text-align: center;
+		padding: 10px;
+
+		.account-number {
+			@include display($align: center);
+
+			button {
+				padding: 7pxl;
+				border-radius: 10px;
+				background: var(--clickable);
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.confirmed-alert-box {
+	// background: #fff;
+	@include glass;
+	width: 80vw !important;
+	max-width: 500px;
+	padding: 10px;
+	border-radius: 20px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	@include display($direction: column, $align: center);
+	z-index: 10000;
+
+	.checkmark-img-cont {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: #fff;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	.copied-account-number {
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	.close-btn {
+		width: 70%;
+		margin: auto;
+		padding: 7px 10px;
+		border-radius: 20px;
+		border: none;
+		outline: none;
+		font-size: 1.2rem;
+		font-weight: bold;
+		background: var(--clickable);
+		cursor: pointer;
+	}
+}
+
+.advantages {
+	list-style: none;
+	text-align: left;
+	width: 100%;
+
+	img {
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+}

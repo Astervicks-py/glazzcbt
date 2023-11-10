@@ -1,0 +1,66 @@
+form[class="create_custom_questions"] {
+	width: 95vw !important;
+	padding: 2rem 0px;
+	max-width: 700px;
+	margin: auto;
+	position: relative;
+	z-index: 50;
+	margin-top: calc(10vh + 20px);
+	@include display($direction: column, $justify: flex-start);
+
+	.form-control {
+		@include glass;
+		width: 100%;
+		padding: 10px;
+	}
+
+	button {
+		padding: 5px 7px;
+		color: #000;
+		font-weight: bold;
+		border-radius: 10px;
+		border: none;
+		background: var(--clickable);
+		font-size: 1.2rem;
+		align-self: flex-end;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"] {
+		width: 20px;
+		height: 20px;
+	}
+
+	textarea {
+		width: 100%;
+		resize: none;
+		font-size: 1.2rem;
+		padding: 3px 7px;
+		outline: none;
+		border-radius: 5px;
+
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+	}
+
+	.option,
+	.bool {
+		@include display($justify: flex-start, $align: center);
+	}
+
+	.hide {
+		display: none !important;
+	}
+
+	.red {
+		color: red;
+		font-weight: bold;
+	}
+
+	.instructions {
+		@include glass;
+		padding: 10px;
+		background: var(--primary);
+	}
+}
